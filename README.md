@@ -1,6 +1,6 @@
 # Frontend Mentor - Social proof section
 
-![Design preview for the Social proof section coding challenge](https://github.com/josebaml/FrontEnd-Mentor-Challenge-1---Social-proof-section/tree/main/assets/design)
+![Design preview for the Social proof section coding challenge](https://github.com/josebaml/FrontEnd-Mentor-Challenge-1---Social-proof-section/blob/main/assets/design/desktop-design.jpg)
 
 ## Welcome! 👋
 
