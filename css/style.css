@@ -80,10 +80,11 @@ header p{
           align-items: center;
 }
 
-.stars_rated p{
+.stars_rated h4{
   padding-top: 0.625rem;
   color: var(--very-dark-magenta);
   font-weight: 700;
+  font-size: 16px;
 }
 
 /***** SECTION CARDS *****/
@@ -103,7 +104,7 @@ header p{
   width: 90%;
   max-width: 21.875rem;
   margin-bottom: 1.25rem;
-  padding: 2.8125rem 1.5625rem;
+  padding: 2.1rem 1.5625rem;
   border-radius: 10px;
 }
 
@@ -172,7 +173,7 @@ header p{
     width: 28.125rem;
   }
 
-  .stars_rated p{
+  .stars_rated h4{
     padding: 0;
   }
 
@@ -203,6 +204,7 @@ header p{
   }
 
   .container{
+    margin: 3rem auto 0 auto;
     grid-template-columns: repeat(12, 1fr);
     row-gap: 15px;
   }
@@ -230,6 +232,9 @@ header p{
 }
 
 @media screen and (min-width: 1230px) {
+  header h1{
+    font-size: 45px;
+  }
   .cards{
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
