@@ -22,7 +22,7 @@ body {
   grid-template-columns: 1fr;
   margin: 0 auto;
   width: 100%;
-  max-width: 80rem;
+  max-width: 1280px;
 }
 
 /***** HEADER *****/
@@ -80,11 +80,11 @@ header p{
           align-items: center;
 }
 
-.stars_rated h4{
+.stars_rated h5{
   padding-top: 0.625rem;
   color: var(--very-dark-magenta);
   font-weight: 700;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 /***** SECTION CARDS *****/
@@ -173,7 +173,7 @@ header p{
     width: 28.125rem;
   }
 
-  .stars_rated h4{
+  .stars_rated h5{
     padding: 0;
   }
 
@@ -230,22 +230,35 @@ header p{
   }
   
 }
+@media screen and (min-width: 1140px) {
 
-@media screen and (min-width: 1230px) {
+  header{
+    margin-left: 1.875rem;
+  }
   header h1{
-    font-size: 45px;
+    font-size: 2.5rem;
+    text-align: left;
+    margin-left: 0;
+  }
+
+  header p{
+    text-align: left;
+    margin-left: 0;
   }
   .cards{
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    height: 21.25rem;
+    -webkit-box-pack: space-between;
+        -ms-flex-pack: space-between;
+            justify-content: space-between;
+    height: 18.125rem;
+    justify-content: space-between;
+    margin-left: 1.875rem;
+    margin-right: 1.875rem;
   }
 
   .card{
-    margin-bottom: 0;
+    margin: 0;
   }
 
   .card_one{
@@ -261,6 +274,20 @@ header p{
   .card_three{
     -ms-flex-item-align: end;
         align-self: flex-end;
+  }
+}
+@media screen and (min-width: 1300px) {
+  header{
+    margin-left: 0;
+  }
+
+  header h1{
+    font-size: 45px;
+  }
+
+  .cards{
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .attribution{
