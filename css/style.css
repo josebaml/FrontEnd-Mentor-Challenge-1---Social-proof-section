@@ -38,7 +38,7 @@ header h1{
   width: 70%;
   text-align: center;
   margin: auto;
-  padding-bottom: 2.1875rem;
+  padding-bottom: 1.25rem;
 }
 
 header p{
@@ -46,6 +46,7 @@ header p{
   width: 90%;
   text-align: center;
   margin: auto;
+  line-height: 1.5625rem;
 }
 
 /***** SECTION STARS *****/
@@ -102,16 +103,16 @@ header p{
 .card{
   background-color:var(--very-dark-magenta);
   width: 90%;
-  max-width: 21.875rem;
+  max-width: 23.75rem;
   margin-bottom: 1.25rem;
-  padding: 2.1rem 1.5625rem;
+  padding: 2.8rem 1.5625rem;
   border-radius: 10px;
 }
 
 .card img{
   border-radius: 50%;
-  width: 3.75rem;
-  height: 3.75rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 .header_card{
@@ -128,7 +129,7 @@ header p{
 
 .header_text_card{
   padding-left: 1.25rem;
-  padding-bottom: 0.3125rem;
+  padding-bottom: 0.1563rem;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
@@ -139,13 +140,14 @@ header p{
 }
 
 .header_text_verified{
-  padding-top: 0.625rem;
+  padding-top: 0.3125rem;
   color: var(--soft-pink);
 }
 
 .cards_text{
   padding-top: 2.1875rem;
   color: var(--light-grayish-magenta);
+  line-height: 1.5625rem;
 }
 
 /***** FOOTER *****/
@@ -217,7 +219,7 @@ header p{
     grid-column: 6/-1;
     padding-bottom: 0;
     padding-top: 5rem;
-    padding-bottom: 2.8125rem;
+    width: 90%;
   }
 
   .cards{
@@ -245,25 +247,34 @@ header p{
     text-align: left;
     margin-left: 0;
   }
+
+  .section_stars_rated{
+    grid-column: 7/-1;
+    padding: 5rem 0 0 3rem;
+    width: 100%;
+    padding-right: 1.875rem;
+  }
+
   .cards{
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -webkit-box-pack: space-between;
         -ms-flex-pack: space-between;
             justify-content: space-between;
-    height: 18.125rem;
+    height: 20rem;
     justify-content: space-between;
     margin-left: 1.875rem;
     margin-right: 1.875rem;
   }
 
   .card{
-    margin: 0;
+    margin: 0 .5em;
   }
 
   .card_one{
     -ms-flex-item-align: start;
         align-self: flex-start;
+        margin-left: 0;
   }
 
   .card_two{
@@ -274,6 +285,7 @@ header p{
   .card_three{
     -ms-flex-item-align: end;
         align-self: flex-end;
+        margin-right: 0;
   }
 }
 @media screen and (min-width: 1300px) {
@@ -281,13 +293,18 @@ header p{
     margin-left: 0;
   }
 
-  header h1{
-    font-size: 45px;
+  .section_stars_rated{
+    padding-right: 0;
+  }
+
+  .card{
+    margin: 0;
   }
 
   .cards{
     margin-left: 0;
     margin-right: 0;
+    margin-top: 0;
   }
 
   .attribution{
